@@ -10,21 +10,4 @@ frontend/.env
 .env.local
 .env.*.local
 
-# Vercel config
-.vercel/
-.vercelignore
 
-# OS / editors
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Build artifacts
-dist/
-build/
