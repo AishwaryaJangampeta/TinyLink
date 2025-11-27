@@ -75,7 +75,7 @@ CREATE TABLE links (
 ## Project Structure
 
 TinyLink/
-  backend/
-  frontend/
-  README.md
-  .gitignore
+    backend/
+    frontend/
+    README.md
+    .gitignore
