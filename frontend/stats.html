@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinyLink Stats</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TinyLink </h1>
+            <p>Link Statistics</p>
+        </header>
+        <section class="card">
+            <h2>Stats for: <span id="code"></span></h2>
+            <p><strong>Short URL:</strong> <a href="#" id="short-url" target="_blank"></a></p>
+            <p><strong>Target URL:</strong> <a href="#" id="target-url" target="_blank"></a></p>
+            <p><strong>Clicks:</strong><span id="clicks"></span></p>
+            <p><strong>Last Clicked:</strong><span id="last-clicked"></span></p>
+            <p><strong>Created At:</strong><span id="created-at"></span></p>  
+            
+            <button class="btn" onclick="goBack()">Back</button>
+        </section>
+    </div> 
+    
+    <script src="./stats.js"></script>
+</body>
+</html>

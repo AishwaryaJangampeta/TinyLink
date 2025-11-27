@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://tinylink-backend-xc2a.onrender.com/api/:path*"
+    },
+    {
+      "source": "/:code",
+      "destination": "https://tinylink-backend-xc2a.onrender.com/:code"
+    }
+  ]
+}

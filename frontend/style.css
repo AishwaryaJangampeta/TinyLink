@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    background: #f5f1e3;
+    color: #222222;
+}
+
+.container {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.subtitle {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 2px 6px #0000000a;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row {
+    display: flex;  
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+label {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input[type='url'],
+input[type='text'] {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ef8354; 
+  box-shadow: 0 0 0 1px #ef835440;
+}
+
+.btn {
+  border: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #e5e5e5;
+  color: #222222;
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.btn:hover {
+  background-color: #d7d7d7;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn.primary {
+  background-color: #0058dd;
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background-color: #031f39;
+}
+
+.btn.danger {
+  background-color: #e15252;
+  color: #ffffff;
+}
+
+.btn.danger:hover {
+  background-color: #cf4242;
+}
+
+.btn.small {
+  padding: 4px 8px;
+  font-size: 13px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th,
+td {
+  padding: 8px 6px;
+  text-align: center;
+}
+
+th {
+  background-color: #f7f7f7;
+  font-weight: 600;
+}
+
+td a {
+  color: #2563eb;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+.message {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #666666;
+}
+
+.message.error {
+  color: #d0342c;
+}
+
+.message.success {
+  color: #1b7f4b;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 12px 14px;
+  }
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    max-width: 190px;
+    word-break: break-word;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+
+
+
+

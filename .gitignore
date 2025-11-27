@@ -1,0 +1,15 @@
+# Ignore node modules in both frontend and backend
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Ignore env files anywhere
+**/.env
+
+# Ignore build folders if any
+dist/
+build/
+
+# Ignore system junk
+.DS_Store
+Thumbs.db

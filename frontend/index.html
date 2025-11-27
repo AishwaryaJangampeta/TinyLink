@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyLink Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TinyLink</h1>
+            <p>Simple URL shortner dashboard</p>
+        </header>
+        <section class="card">
+            <h2>Create Short Link</h2>
+            <form id="create-form">
+            <div class="form-row">
+                <label for="url">Target URL</label>
+                <input type="url" id="url" name="url" placeholder="https://example.com" required />
+            </div>
+            <div class="form-row">
+                <label for="code">Custom code (Optional)</label>
+                <input type="text" id="code" name="code" placeholder="6-8 letters/numbers" />
+            </div>
+            <button type="submit" class="btn primary">Shorten</button>
+            <p id="form-message" class="message"></p>
+            </form>
+        </section>
+        <section class="card">
+            <div class="card-header">
+                <h2>All links</h2>
+                <button id="refresh-btn">Refresh</button>
+            </div>
+            <div class="table-wrapper">
+                <table id="links-table">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Target URL</th>
+                            <th>Clicks</th>
+                            <th>Created At</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="links-tbody">
+
+                    </tbody>
+                </table>
+                <p id="empty-state" class="message">No links yet. Create one above</p>
+            </div>
+        </section>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
